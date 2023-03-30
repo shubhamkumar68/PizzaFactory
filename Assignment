@@ -1,26 +1,26 @@
 class PizzaOrderingSystem {
 
-    // Define the menu items and their prices
+    // Defining the menu items and their prices
     Map<String, Map<String, Integer>> menu = new HashMap<>();
     
-    // Define the available options for crust, toppings, and sides
+    // Defining the available options for crust, toppings, and sides
     List<String> crustOptions = Arrays.asList("New hand tossed", "Wheat thin crust", "Cheese Burst", "Fresh pan pizza");
     Map<String, Integer> vegToppingOptions = new HashMap<>();
     Map<String, Integer> nonVegToppingOptions = new HashMap<>();
     List<String> sideOptions = Arrays.asList("Cold drink", "Mousse cake");
 
-    // Define the selected items for the order
+    // Defining the selected items for the order
     String selectedPizza;
     String selectedCrust;
     List<String> selectedToppings;
     List<String> selectedSides;
 
-    // Define the total cost of the order
+    // Defining the total cost of the order
     int totalCost;
 
     // Constructor to initialize the menu and available options
     public PizzaOrderingSystem() {
-        // Define the Vegetarian Pizza menu items and their prices
+        // Defining the Vegetarian Pizza menu items and their prices
         Map<String, Integer> vegetarianMenu = new HashMap<>();
         vegetarianMenu.put("Deluxe Veggie (Regular)", 150);
         vegetarianMenu.put("Deluxe Veggie (Medium)", 200);
@@ -33,7 +33,7 @@ class PizzaOrderingSystem {
         vegetarianMenu.put("Paneer Tikka (Large)", 340);
         menu.put("Vegetarian Pizza", vegetarianMenu);
 
-        // Define the Non-Vegetarian Pizza menu items and their prices
+        // Defining the Non-Vegetarian Pizza menu items and their prices
         Map<String, Integer> nonVegetarianMenu = new HashMap<>();
         nonVegetarianMenu.put("Non-Veg Supreme (Regular)", 190);
         nonVegetarianMenu.put("Non-Veg Supreme (Medium)", 325);
@@ -46,14 +46,14 @@ class PizzaOrderingSystem {
         nonVegetarianMenu.put("Pepper Barbecue Chicken (Large)", 525);
         menu.put("Non-Vegetarian Pizza", nonVegetarianMenu);
 
-        // Define the Vegetarian Toppings and their prices
+        // Defining the Vegetarian Toppings and their prices
         vegToppingOptions.put("Black olive", 20);
         vegToppingOptions.put("Capsicum", 25);
         vegToppingOptions.put("Paneer", 35);
         vegToppingOptions.put("Mushroom", 30);
         vegToppingOptions.put("Fresh tomato", 10);
 
-        // Define the Non-Vegetarian Toppings and their prices
+        // Defining the Non-Vegetarian Toppings and their prices
         nonVegToppingOptions.put("Chicken tikka", 35);
         nonVegToppingOptions.put("Barbeque chicken", 45);
         nonVegToppingOptions.put("Grilled chicken", 40);
